@@ -10,7 +10,6 @@ from apps.adopcion.forms import PersonaForm, SolicitudForm
 #def index(request):
 #	return render(request, 'adopcion/index.html')
 
-
 def index_adopcion(request):
 	return HttpResponse("Soy la pagina principal de la app de adopcion")
 
@@ -34,7 +33,7 @@ class SolicitudCreate(CreateView):
 			context['form2'] = self.second_form_class(self.request.GET)
 		return context
 
-	def post(self, request, *args, **kwards):
+	def post(self, request, *args, **kwargs):
 		self.object = self.get_object
 		form = self.form_class(request.POST)
 		form2 = self.second_form_class(request.POST)

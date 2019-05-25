@@ -18,7 +18,6 @@ from apps.mascota.models import Mascota
 def index(request):
 	return render(request, 'mascota/index.html')
 
-
 def mascota_view(request):
 	if request.method == 'POST':
 		form = MascotaForm(request.POST)
