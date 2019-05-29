@@ -11,7 +11,7 @@ from apps.adopcion.forms import PersonaForm, SolicitudForm
 #	return render(request, 'adopcion/index.html')
 
 def index_adopcion(request):
-	return HttpResponse("Soy la pagina principal de la app de adopcion")
+	return HttpResponse("Esta es la pagina principal de la app de adopcion")
 
 
 class SolicitudList(ListView):
